@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+
+
+body {
+    background: #212121;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.hiddentext{
+    text-decoration: ="display: none;"
+}
+
+
+/* Align Side by side */
+
+
+div.left{
+text-align: left;
+}
+
+div.right{
+text-align: right;
+}
+
+
+div.center {
+    text-align: center;
+}
+
+
+.column {
+    float: left;
+    width: 30.33%;
+    padding: 1px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* TOP LINE  ---------------------------*/
+
+
+.classy-bq {
+
+    border-left: 1px solid #ccc;
+    margin: 1.5em 10px;
+    padding: .7em 25px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    color: white;
+}
+
+blockquote p {
+    display: inline;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.blockquote-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0.95;
+    padding: 20px;
+}
+
+
+
+
+.cursor {
+    color: #DEDEDE;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 111;
+    border: 1px solid #ffffff;
+    transition: all 0.2s ease-out;
+    animation: moveCursor1 .5s infinite alternate;
+}
+
+
+/* Image Hover ---------------------------*/
+
+
+.snip1273 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    margin: 10px;
+    min-width: 60px;
+    max-width: 310px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    background-color: #000000;
+    font-size: 16px;
+}
+
+.snip1273 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+.snip1273 img {
+    position: relative;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.snip1273 figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    padding: 20px 30px;
+}
+
+.snip1273 figcaption:before,
+.snip1273 figcaption:after {
+    width: 1px;
+    height: 0;
+}
+
+.snip1273 figcaption:before {
+    right: 0;
+    top: 0;
+}
+
+.snip1273 figcaption:after {
+    left: 0;
+    bottom: 0;
+}
+
+.snip1273 h3,
+.snip1273 p {
+    line-height: 1.5em;
+}
+
+.snip1273 h3 {
+    margin: 0 0 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.snip1273 p {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+
+.snip1273 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.snip1273:before,
+.snip1273:after,
+.snip1273 figcaption:before,
+.snip1273 figcaption:after {
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+    z-index: 1;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0.8;
+}
+
+.snip1273:before,
+.snip1273:after {
+    height: 1px;
+    width: 0;
+}
+
+.snip1273:before {
+    top: 0;
+    left: 0;
+}
+
+.snip1273:after {
+    bottom: 0;
+    right: 0;
+}
+
+.snip1273:hover img,
+.snip1273.hover img {
+    opacity: 0.4;
+}
+
+.snip1273:hover figcaption,
+.snip1273.hover figcaption {
+    opacity: 1;
+}
+
+.snip1273:hover figcaption:before,
+.snip1273.hover figcaption:before,
+.snip1273:hover figcaption:after,
+.snip1273.hover figcaption:after {
+    height: 100%;
+}
+
+.snip1273:hover:before,
+.snip1273.hover:before,
+.snip1273:hover:after,
+.snip1273.hover:after {
+    width: 100%;
+}
+
+.snip1273:hover:before,
+.snip1273.hover:before,
+.snip1273:hover:after,
+.snip1273.hover:after,
+.snip1273:hover figcaption:before,
+.snip1273.hover figcaption:before,
+.snip1273:hover figcaption:after,
+.snip1273.hover figcaption:after {
+    opacity: 0.1;
+}
+
+/* Image Hover END--------------------------- */
+
+
+/* Animation ---------------------------*/
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+/* Head Anime */
+
+/* Header */
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+#large-header {
+    background-image: url('content/demo-1-bg.jpg');
+}
+
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.demo-1 .main-title {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+    .demo-1 .main-title {
+        font-size: 3em;
+    }
+}
+
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@keyframes moveCursor1 {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.8);
+    }
+}
+
+@keyframes moveCursor2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Animation END ---------------------------*/
+
+mark {
+    border: 40px;
+    border-radius: 5px;
+    background-color: #3E606F;
+    color: black;
+}
+
