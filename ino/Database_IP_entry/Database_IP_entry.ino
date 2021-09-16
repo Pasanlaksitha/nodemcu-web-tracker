@@ -11,7 +11,7 @@ Adafruit_SSD1306 display(-1);
 const char *ssid     = "ISL-PC 5440";
 const char *password = "ISL123456";
 
-const long utcOffsetInSeconds = 19080;
+const long utcOffsetInSeconds = 19800;
 
 char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
@@ -22,6 +22,8 @@ NTPClient timeClient(ntpUDP, "pool.ntp.org", utcOffsetInSeconds);
 void setup(){
   Serial.begin(115200);
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(LED_BUILTIN, LOW);
 
   WiFi.begin(ssid, password);
 
@@ -35,7 +37,7 @@ void setup(){
 
 void loop() {
   timeClient.update();
-
+  digitalWrite(LED_BUILTIN, LOW);
   Serial.print(daysOfTheWeek[timeClient.getDay()]);
   Serial.print(", ");
   Serial.print(timeClient.getHours());
