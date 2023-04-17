@@ -26,7 +26,7 @@ This is a web tracker application that allows you to track users accessing your 
 1. Clone this repository to your local machine using the following command:
 sh
 ```
-git clone https://github.com/{username}/{repository-name}.git
+git clone https://github.com/Pasanlaksitha/nodemcu-web-tracker
 ```
 2. Upload the Arduino code to your NodeMCU board using the Arduino IDE.
 
