@@ -4,10 +4,10 @@
  
  
    
-  $db_host = "localhost";
-  $db_user = "id16999459_node";
-  $db_pass = "meqAbGGp38<pqBgs";
-  $db_name = "id16999459_ip_log";
+  $db_host = "";
+  $db_user = "";
+  $db_pass = "";
+  $db_name = "";
   $link = mysql_connect("$db_host", "$db_user", "$db_pass");
   mysql_select_db("$db_name", $link);
 
