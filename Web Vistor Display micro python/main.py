@@ -18,7 +18,7 @@ def notification():
   oled.text('ON', 0, 0)
   oled.show()
   
-response = urequests.get('http://ceylonleaks.ml/json/node.php')
+response = urequests.get('http:///json/node.php') //request site
 print(response.text)
 
 ip = (response.json()['ip'])
