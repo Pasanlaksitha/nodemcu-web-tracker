@@ -3,10 +3,10 @@
  $agent = $_SERVER['HTTP_USER_AGENT'];
  
    
-  $db_host = "sql106.epizy.com";
-  $db_user = "epiz_28699394";
-  $db_pass = "Iks3c92e6Nn9";
-  $db_name = "epiz_28699394_pop_game";
+  $db_host = "";
+  $db_user = "";
+  $db_pass = "";
+  $db_name = "";
   $link = mysql_connect("$db_host", "$db_user", "$db_pass");
   mysql_select_db("$db_name", $link);
    
