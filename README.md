@@ -1,5 +1,4 @@
 # nodemcu-web-tracker
-# nodemcu-web-tracker
 ## Web Tracker using Arduino and PHP
 This is a web tracker application that allows you to track users accessing your website by displaying their IP address, location, and device type based on their IP address. The application is built using PHP, HTML, CSS, JavaScript, and Arduino C++ and runs on an embedded system using NodeMCU.
 
